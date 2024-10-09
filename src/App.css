@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 1 1 auto;
+  gap: 1rem;
+}
+.autocomplete {
+  position: relative;
+  font-size: 0.8rem;
+}
+.autocomplete input {
+  width: 200px;
+}
+.autocomplete-menu {
+  position: absolute;
+  width: 205px;
+  max-height: 300px;
+  overflow-y: scroll;
+  border: 1px solid black;
+  background-color: #242424;
+  z-index: 3;
+}
+.autocomplete-menu div {
+  cursor: pointer;
+  padding: 4px 3px;
+}
+.autocomplete-menu div:hover {
+  background-color: darkgray;
+}
